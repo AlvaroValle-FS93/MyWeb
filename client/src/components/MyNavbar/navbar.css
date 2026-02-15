@@ -12,6 +12,7 @@
     border: 1px solid var(--font-color-primary);
     padding: .5rem 1rem;
     border-radius: 4rem;
+    background-color: rgba(0, 0, 0, 0.2);
 
 
     .logo {
@@ -19,6 +20,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      border-right: 1px solid white;
+      padding-right: 1rem;
   
       img {
   
@@ -49,7 +52,36 @@
       color: black;
       border-radius: 2rem;
     }
-  }
 
+    .other-links {
+
+      border-left: 1px solid white;
+      padding-left: 1rem;
+      display: flex;
+      align-items: center;
+
+      a {
+
+        background-color: var(--font-color-primary);
+        text-decoration: none;
+        padding: .5rem 1rem;
+        color: black;
+        border-radius: 2rem;
+        display: flex;
+        gap: .5rem;
+        transition: 0.3s;
+
+        img {
+
+          width: 20px;
+        }
+      }
+
+      a:hover {
+
+        background-color: #a5a1a1;
+      }
+    }
+  }
 
 }

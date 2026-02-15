@@ -6,31 +6,93 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    /* background-image: url('/images/TechnologiesLogos/bg_it.jpg'); */
-    background-position:right ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-border);
 
-    h1 {
+    .title-photo {
 
-      font-family: var(--font-title);
-      font-size: 6rem;
+      display: flex;
+      gap: 2rem;
+      padding-bottom: 1rem;
+
+      .name-job {
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+    
+          font-family: var(--font-title);
+          font-size: 3.5rem;
+
+          span {
+
+            background: linear-gradient(90deg, #21e88b,#1891aa);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        
+        h2 {
+          
+          border-bottom: 6px solid var(--color-border);
+          font-family: var(--font-title);
+          color: #d3cbcb;
+        }
+
+      }
+
+      img {
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid var(--color-border);
+        object-fit: cover;
+      }
+
+    }
+
+    .technologies-images {
+
+
+      img {
+
+        width: 100px;
+      }
     }
     
-    h2 {
-      
-      border-bottom: 6px solid white;
-      font-family: var(--font-title);
+    p {
+
+      color: gray;
+      font-size: 1.2rem;
+
+      span {
+
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .links-social-network {
+
+      display: flex;
+      gap: 1rem;
+
+      img {
+
+        width: 75px;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        
+        transform: scale(1.1);
+      }
     }
   }
 
-  .technologies {
-
-    display: flex;
-
-    img {
-
-      width: 200px;
-    }
-  }
+  
 }

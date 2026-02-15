@@ -1,6 +1,5 @@
 import {NavLink} from 'react-router';
 import './navbar.css'
-import { MyButton } from '../MyButton/MyButton';
 
 export const MyNavbar = () => {
   return (
@@ -15,6 +14,12 @@ export const MyNavbar = () => {
           <NavLink to='/portfolio' className='mynav-link'>Portfolio</NavLink>
           <NavLink to='/hobbies' className='mynav-link'>Hobbies</NavLink>
           <NavLink to='/contact' className='mynav-link'>Contact</NavLink>
+          <div className='other-links'>
+            <a href="/documents/cv.pdf" download>
+              <img src="/images/icons/download.svg" alt="" />
+              My Resume
+            </a>
+          </div>
         </div>
     </div>
   )
