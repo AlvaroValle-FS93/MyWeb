@@ -28,17 +28,17 @@ export const MyFooter = () => {
             <Link className='link' to='/contact'>Contact</Link>
           </Col>
           <Col className='contact'>
-            <a href='https://www.linkedin.com/in/alvaro-valle-melgarejo/'>
+            <a target='_blank' href='https://www.linkedin.com/in/alvaro-valle-melgarejo/'>
               <div className='contact-icon'>
                 <img src="/images/icons/linkedin-footer.svg" alt="" />
               </div>
             </a>
-            <a href='https://github.com/AlvaroValle-FS93'>
+            <a target='_blank' href='https://github.com/AlvaroValle-FS93'>
               <div className='contact-icon'>
                 <img src="/images/icons/github-footer.svg" alt="" />
               </div>
             </a>
-            <a href='mailto:alvaro.valle.melga@hotmail.com'>
+            <a target='_blank' href='mailto:alvaro.valle.melga@hotmail.com'>
               <div className='contact-icon'>
                 <img src="/images/icons/email-footer.svg" alt="" />
               </div>

@@ -1,8 +1,17 @@
+import {useState} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router';
 import './about.css';
 
 const MyAbout = () => {
+
+  const [numStack, setNumStack] = useState();
+
+  const changeStack = (num) => {
+    setNumStack(num);
+    num == numStack && setNumStack();
+  }
+
   return (
     <div className='about-component'>
       <Container xxl>
@@ -26,10 +35,10 @@ const MyAbout = () => {
             </Col>
 
             <Col xs={12} md={12} lg={7} className='column-about-2'>
-              <p>Full Stack developer crafting powerful web apps using <span>React</span>, <span>Node (Express)</span>, <span>SQL</span>, and <span>Django</span>.</p>
-              <p>Creating seamless and high-performance <span>native mobile applications</span> for real-world users.</p>
-              <p>Leveraging <span>Data Science</span> with <span>Python</span> to transform raw data into actionable insights.</p>
-              <p><span>Automating</span> business processes and optimizing workflows for <span>SEO</span>, efficiency, and growth.</p>
+              <p>💻 Full Stack developer crafting powerful web apps using <span>React</span>, <span>Node (Express)</span>, <span>SQL</span>, and <span>Django</span>.</p>
+              <p>📲 Creating seamless and high-performance <span>native mobile applications</span> for real-world users.</p>
+              <p>📊 Leveraging <span>Data Science</span> with <span>Python</span> to transform raw data into actionable insights.</p>
+              <p>🤖 <span>Automating</span> business processes and optimizing workflows for <span>SEO</span>, efficiency, and growth.</p>
 
               <div className='location-div'>
                 <img src="/images/icons/world-icon.svg" alt="world icon" />
@@ -39,31 +48,34 @@ const MyAbout = () => {
               <div className='stack'>
                 <h3>Tech Stack</h3>
                 <div className='stack-list'>
-                  <div className='stack-part'>
+                  <div onClick={() => changeStack(1)} className='stack-part'>
                     <img src="/images/icons/front.svg" alt="" />
                     <p>Frontend</p>
                   </div>
-                  <div className='stack-part'>
+                  <div onClick={() => changeStack(2)} className='stack-part'>
                     <img src="/images/icons/server.svg" alt="" />
                     <p>Server</p>
                   </div>
-                  <div className='stack-part'>
+                  <div onClick={() => changeStack(3)} className='stack-part'>
                     <img src="/images/icons/db.svg" alt="" />
                     <p>Data Base</p>
                   </div>
-                  <div className='stack-part'>
+                  <div onClick={() => changeStack(4)} className='stack-part'>
                     <img src="/images/icons/tools.svg" alt="" />
                     <p>Tools</p>
                   </div>
                 </div>
-                <p>el stack tete</p>
+                {numStack == 1 && <p>Html 5, CSS 3, React, Bootstrap, Tailwind</p>}
+                {numStack == 2 && <p>Node.js, Django, Express</p>}
+                {numStack == 3 && <p>SQL, NoSQL</p>}
+                {numStack == 4 && <p>Git, Scrum, GitHub, VSC, Trello, Figma</p>}
               </div>
 
               <div className='languages'>
                 <img src="/images/icons/languages.svg" alt="" />
                 <div className='languages-list'>
                   <h5>Languages</h5>
-                  <p>Spanish (native), french (native), english (profesional proficency), italian (profesional proficency)</p>
+                  <p>Spanish (native), french (native), english (professional proficiency), italian (professional proficiency)</p>
                 </div>
               </div>
 

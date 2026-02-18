@@ -5,7 +5,6 @@
     background: rgba(0, 0, 0, 0.2);
     padding: 2rem;
     border-radius: 2rem;
-    border: 1px solid var(--color-orange);
 
     .header-about {
   
@@ -99,7 +98,7 @@
           padding: 1rem;
           border-radius: 1rem;
           gap: 1rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
 
           img {
 
@@ -122,12 +121,19 @@
 
         .stack {
 
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
+
+          h3 {
+
+            margin-bottom: 1rem;
+          }
 
           .stack-list {
 
             display: flex;
             gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
 
             .stack-part {
 
@@ -139,6 +145,8 @@
               justify-content: center;
               align-items: center;
               padding: .5rem 1rem;
+              transition: transform 0.3s ease;
+              cursor: pointer;
 
               img {
 
@@ -151,6 +159,16 @@
                 margin: 0;
               }
             }
+
+            .stack-part:hover {
+
+              transform: scale(1.1);
+            }
+          }
+
+          p {
+
+            color: var(--font-color-gray);
           }
         }
 

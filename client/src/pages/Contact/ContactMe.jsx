@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import axios from 'axios';
 import {ZodError} from 'zod';
 import './contact.css';
@@ -65,119 +65,111 @@ const ContactMe = () => {
   return (
     <div className='contact-component'>
      
-      <Row>
-
-        <Col>
-          <div className='contact'>
-            <h3>Get in touch and let’s create amazing projects together!</h3>
-
-            <div className='contact-details'>
-
-              <div className='details'>
-                <img src="/images/icons/location.svg" alt="location logo" />
-                <div className='details-text'>
-                  <h4>Location</h4>
-                  <h5>Valencia, Spain</h5>
-                </div>
-              </div>
-
-              <div className='details'>
-                <img src="/images/icons/email.svg" alt="email logo" />
-                <div className='details-text'>
-                  <h4>Email</h4>
-                  <h5>alvaro.valle.melga@hotmail.com</h5>
-                </div>
-              </div>
-
-              <div className='details'>
-                <img src="/images/icons/phone.svg" alt="email logo" />
-                <div className='details-text'>
-                  <h4>Phone</h4>
-                  <h5>+34 697 819 510</h5>
-                </div>
-              </div>
-
-            </div>
-
-            <h5>You can also contact me on:</h5>
-            <div className='also-contact'>
-                <a href="https://wa.me/+34697819510?text=Hola, Álvaro!" target="_blank" rel="noopener noreferrer">
-                  <div className='whatsapp'>
-                    <img src="/images/icons/whatsapp.svg" alt="whatsapp icon" />
-                    <p>WhatsApp</p>
+      <Container xxl>
+        <Row>
+          <Col>
+            <div className='contact'>
+              <h3>Get in touch and let’s create amazing projects together!</h3>
+              <div className='contact-details'>
+                <div className='details'>
+                  <img src="/images/icons/location.svg" alt="location logo" />
+                  <div className='details-text'>
+                    <h4>Location</h4>
+                    <h5>Valencia, Spain</h5>
                   </div>
-                </a>
-
-                <a href="https://t.me/+34697819510?text=Hola, Álvaro!" target="_blank" rel="noopener noreferrer">
-                  <div className='telegram'>
-                    <img src="/images/icons/telegram.svg" alt="whatsapp icon" />
-                    <p>Telegram</p>
+                </div>
+                <div className='details'>
+                  <img src="/images/icons/email.svg" alt="email logo" />
+                  <div className='details-text'>
+                    <h4>Email</h4>
+                    <h5>alvaro.valle.melga@hotmail.com</h5>
                   </div>
-                </a>
-
-              
+                </div>
+                <div className='details'>
+                  <img src="/images/icons/phone.svg" alt="email logo" />
+                  <div className='details-text'>
+                    <h4>Phone</h4>
+                    <h5>+34 697 819 510</h5>
+                  </div>
+                </div>
+              </div>
+              <h5>You can also contact me on:</h5>
+              <div className='also-contact'>
+                  <a href="https://wa.me/+34697819510?text=Hola, Álvaro!" target="_blank" rel="noopener noreferrer">
+                    <div className='whatsapp'>
+                      <img src="/images/icons/whatsapp.svg" alt="whatsapp icon" />
+                      <p>WhatsApp</p>
+                    </div>
+                  </a>
+                  <a href="https://t.me/+34697819510?text=Hola, Álvaro!" target="_blank" rel="noopener noreferrer">
+                    <div className='telegram'>
+                      <img src="/images/icons/telegram.svg" alt="whatsapp icon" />
+                      <p>Telegram</p>
+                    </div>
+                  </a>
+        
+              </div>
             </div>
-          </div>
-        </Col>
-
-        <Col>
-          <form>
-            <div className='group-input'>
-              <label htmlFor="">Full Name</label>
-              <input 
-                type="text" 
-                placeholder='Ex: John Smith'
-                onChange={handleChange}
-                value={data.name}
-                name='name'
-              />
-              {valErrors?.name && <p className='alert-error'>{valErrors.name} x</p>}
-            </div>
-            <div className='group-input'>
-              <label htmlFor="">Email</label>
-              <input 
-                type="text" 
-                placeholder='myemail@example.com'
-                onChange={handleChange}
-                value={data.email}
-                name='email'
-              />
-              {valErrors?.email && <p className='alert-error'>{valErrors.email} x</p>}
-            </div>
-            <div className='group-input'>
-              <label htmlFor="">Phone Number (not mandatory)</label>
-              <input 
-                type="text" 
-                placeholder='+34 678 678 456'
-                onChange={handleChange}
-                value={data.phone}
-                name='phone'
-              />
-              {valErrors?.phone && <p className='alert-error'>{valErrors.phone} x</p>}
-            </div>
-            <div className='group-input'>
-              <label htmlFor="">Let me your message</label>
-              <textarea 
-                placeholder="Hello Álvaro, I'm writing you for..." 
-                id="" 
-                cols='30' 
-                rows='6'
-                onChange={handleChange}
-                value={data.message}
-                name='message'
-              ></textarea>
-              {valErrors?.message && <p className='alert-error'>{valErrors.message} x</p>}
-            </div>
-              {messageOk && <p className='alert-success'>{messageOk}</p>}
-            <div className='button-class'>
-              <button onClick={submit} type='button'>
-                <img src="/images/icons/send.svg" alt="" />
-              Send
-              </button>
-            </div>
-          </form>
-        </Col>
-      </Row>
+          </Col>
+          <Col>
+            <form>
+              <div className='group-input'>
+                <label htmlFor="">Full Name</label>
+                <input
+                  type="text"
+                  placeholder='Ex: John Smith'
+                  onChange={handleChange}
+                  value={data.name}
+                  name='name'
+                />
+                {valErrors?.name && <p className='alert-error'>{valErrors.name} x</p>}
+              </div>
+              <div className='group-input'>
+                <label htmlFor="">Email</label>
+                <input
+                  type="text"
+                  placeholder='myemail@example.com'
+                  onChange={handleChange}
+                  value={data.email}
+                  name='email'
+                />
+                {valErrors?.email && <p className='alert-error'>{valErrors.email} x</p>}
+              </div>
+              <div className='group-input'>
+                <label htmlFor="">Phone Number (not mandatory)</label>
+                <input
+                  type="text"
+                  placeholder='+34 678 678 456'
+                  onChange={handleChange}
+                  value={data.phone}
+                  name='phone'
+                />
+                {valErrors?.phone && <p className='alert-error'>{valErrors.phone} x</p>}
+              </div>
+              <div className='group-input'>
+                <label htmlFor="">Let me your message</label>
+                <textarea
+                  placeholder="Hello Álvaro, I'm writing you for..."
+                  id=""
+                  cols='30'
+                  rows='6'
+                  onChange={handleChange}
+                  value={data.message}
+                  name='message'
+                ></textarea>
+                {valErrors?.message && <p className='alert-error'>{valErrors.message} x</p>}
+              </div>
+                {messageOk && <p className='alert-success'>{messageOk}</p>}
+              <div className='button-class'>
+                <button onClick={submit} type='button'>
+                  <img src="/images/icons/send.svg" alt="" />
+                Send
+                </button>
+              </div>
+            </form>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }
