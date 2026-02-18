@@ -6,8 +6,9 @@
     background-color: rgba(0, 0, 0, 0.2);
     padding: 2rem;
     border-radius: 2rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-orange);
     gap: 2rem;
+    justify-content: center;
 
     .photo-container {
 
@@ -18,12 +19,12 @@
 
       .profile-photo {
   
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
-        border: 1px solid var(--color-border);
+        border: 1px solid var(--color-orange);
         object-fit: cover;
-        box-shadow: 0 8px 40px rgba(33, 232, 139, 0.35);
+        box-shadow: 0 8px 40px var(--color-orange);
       }
 
     }
@@ -45,32 +46,55 @@
           font-family: var(--font-title);
           font-size: 3.5rem;
           color: var(--font-color-primary);
+          font-weight: bold;
 
           span {
 
-            background: linear-gradient(90deg, #21e88b,#1891aa);
+            background: var(--button-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
         }
-        
-        h2 {
-          
-          border-bottom: 6px solid var(--color-border);
-          font-family: var(--font-title);
-          color: #d3cbcb;
+
+        .rotation {
+          position: relative;
+          width: 200px;       /* ajusta según tu texto */
+          height: 40px;       /* altura de la línea de texto */
+          overflow: hidden;   /* oculta las palabras que están fuera del contenedor */
+          font-size: 32px;
+          font-weight: bold;
+          color: var(--color-orange);
+        }
+
+        .word {
+          position: absolute;
+          width: 100%;
+          opacity: 0;
+          animation: rotation 8s infinite;
+          text-align: center;
+        }
+
+        .word:nth-child(1) { animation-delay: 0s; }
+        .word:nth-child(2) { animation-delay: 2s; }
+        .word:nth-child(3) { animation-delay: 4s; }
+        .word:nth-child(4) { animation-delay: 6s; }
+
+        @keyframes rotar {
+          0%, 20% { opacity: 0; transform: translateY(100%); }
+          25%, 45% { opacity: 1; transform: translateY(0); }
+          50%, 100% { opacity: 0; transform: translateY(-100%); }
         }
 
       }
 
       p {
 
-        color: gray;
+        color: var(--font-color-primary);
         font-size: 1.2rem;
 
         span {
 
-        color: white;
+        color: var(--color-orange);
         font-weight: bold;
       }
       }
@@ -105,10 +129,10 @@
 
           .getInTouch {
 
-            background-color: #21e88b;
+            background: var(--button-color);
             border-radius: 2rem;
             text-decoration: none;
-            color: black;
+            color: var(--font-color-primary);
             display: flex;
             align-items: center;
             padding: .5rem 1rem;

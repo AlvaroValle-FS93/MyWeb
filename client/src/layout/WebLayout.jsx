@@ -1,7 +1,7 @@
 import { MyNavbar } from '../components/MyNavbar/MyNavbar'
 import { Outlet } from 'react-router'
-import './layoutWeb.css';
 import { MyFooter } from '../components/MyFooter/MyFooter';
+import './layoutWeb.css';
 
 export const WebLayout = () => {
   return (

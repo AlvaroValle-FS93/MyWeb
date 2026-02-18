@@ -8,9 +8,13 @@
 /* Variables globales */
 :root {
   --background-color: linear-gradient(115deg, #02153b,#04425d,#10baa2);
+  --button-color: -webkit-linear-gradient(290deg, #e4671a,#fea22d);
+  --color-orange: #F7A34E;
   --font-color-primary: white;
+  --font-color-black: black;
+  --font-color-gray: #b5b5b5;
   --font-family-primary: 'Inter', sans-serif;
-  --font-title: 'Impact', sans-serif;
+  --font-title: 'Inter', sans-serif;
   --color-border: #0E9E92;
 }
 

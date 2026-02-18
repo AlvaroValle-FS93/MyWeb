@@ -131,7 +131,7 @@ const ContactMe = () => {
                 value={data.name}
                 name='name'
               />
-              {valErrors?.name && <p className='alert-error'>{valErrors.name}</p>}
+              {valErrors?.name && <p className='alert-error'>{valErrors.name} x</p>}
             </div>
             <div className='group-input'>
               <label htmlFor="">Email</label>
@@ -142,7 +142,7 @@ const ContactMe = () => {
                 value={data.email}
                 name='email'
               />
-              {valErrors?.email && <p className='alert-error'>{valErrors.email}</p>}
+              {valErrors?.email && <p className='alert-error'>{valErrors.email} x</p>}
             </div>
             <div className='group-input'>
               <label htmlFor="">Phone Number (not mandatory)</label>
@@ -153,7 +153,7 @@ const ContactMe = () => {
                 value={data.phone}
                 name='phone'
               />
-              {valErrors?.phone && <p className='alert-error'>{valErrors.phone}</p>}
+              {valErrors?.phone && <p className='alert-error'>{valErrors.phone} x</p>}
             </div>
             <div className='group-input'>
               <label htmlFor="">Let me your message</label>
@@ -166,7 +166,7 @@ const ContactMe = () => {
                 value={data.message}
                 name='message'
               ></textarea>
-              {valErrors?.message && <p className='alert-error'>{valErrors.message}</p>}
+              {valErrors?.message && <p className='alert-error'>{valErrors.message} x</p>}
             </div>
               {messageOk && <p className='alert-success'>{messageOk}</p>}
             <div className='button-class'>

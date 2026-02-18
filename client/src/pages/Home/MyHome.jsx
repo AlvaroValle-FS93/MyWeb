@@ -5,26 +5,29 @@ import { Link } from 'react-router';
 const MyHome = () => {
   return (
     <div className='home-component'>
-      <Container className='xxl'>
-        <Row>
-          <Col className='info-home'>
-            
-            <div className='photo-container'>
+      <Container xl>
+        <Row className='info-home'>
+          <Col xs={12} md={4} className='photo-container'>
               <img className='profile-photo' src="/images/photos/profile_photo.png" alt="Photo of me" />
-            </div>
+          </Col>
 
-            <div className='text-info'>
+          <Col xs={12} md={6} className='text-info'>
+          
 
               <div className="name-job">
                 <h1>Hola! I'm <span>Álvaro</span>,</h1>
-                <h2>Software Developer & Data Scientist</h2>
+                <h2 className='rotation'>
+                  <span className='word'>Full Stack Developer</span>
+                  <span className='word'>Data Science</span>
+                  <span className='word'>Automatization</span>
+                </h2>
               </div>
 
               <p>I build full-stack <span>Applications</span> and help businesses develop scalable solutions using technologies such as <span>Node.js</span>, <span>Express</span>, <span>Django</span>, <span>SQL</span>, <span>React</span>, and <span>Python</span>. I focus on writing clean, efficient code and creating reliable systems that solve real-world problems.</p>
               <p>I also work as a <span>Data Analyst</span> and <span>Data Scientist</span>, using Python to analyze data, uncover insights, build predictive models, and support data-driven decision making.</p>
 
-              <div className="links-get-in-touch">
-                <div className='links-social-network'>
+              <Row className="links-get-in-touch">
+                <Col className='links-social-network'>
                   <a href="https://github.com/AlvaroValle-FS93" target='_blank'>
                     <img src="/images/icons/github.svg" alt="github logo" />
                   </a>
@@ -34,23 +37,14 @@ const MyHome = () => {
                   <a href="mailto:alvaro.valle.melga@hotmail.com">
                     <img src="/images/icons/mymail.svg" alt="email logo" />
                   </a>
-                </div>
+                </Col>
 
-                <div className='buttons'>
-                  <Link className='getInTouch' to='/contact'>Get in Touch!</Link>
-                </div>
-              </div>
-            </div>
-
-            <div className='stack'>
-              <h3>My Stack:</h3>
-              <img src="/images/TechnologiesLogos/logo_dark.svg" alt="" />
-              <img src="/images/TechnologiesLogos/python.svg" alt="" />
-              <img src="/images/TechnologiesLogos/node.svg" alt="" />
-              <img src="/images/TechnologiesLogos/sql.png" alt="" />
-            </div>
-
+                <Col className='buttons'>
+                  <Link className='getInTouch text-center' to='/contact'>Get in Touch!</Link>
+                </Col>
+              </Row>
           </Col>
+
         </Row>
       </Container>
     </div>
