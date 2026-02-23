@@ -13,7 +13,7 @@ const MyAbout = () => {
   }
 
   return (
-    <div className='about-component'>
+    <section id='about' className='about-component'>
       <Container xxl>
         <div className="about">
           <div className='header-about'>
@@ -65,7 +65,7 @@ const MyAbout = () => {
                     <p>Tools</p>
                   </div>
                 </div>
-                {numStack == 1 && <p>Html 5, CSS 3, React, Bootstrap, Tailwind</p>}
+                {numStack == 1 && <p>Html 5, CSS 3, React, React Native, Bootstrap, Tailwind</p>}
                 {numStack == 2 && <p>Node.js, Django, Express</p>}
                 {numStack == 3 && <p>SQL, NoSQL</p>}
                 {numStack == 4 && <p>Git, Scrum, GitHub, VSC, Trello, Figma</p>}
@@ -85,17 +85,17 @@ const MyAbout = () => {
           </Row>
           <Row>
             <Col className='d-flex justify-content-center'>
-              <Link to='/portfolio' className='button-container'>
+              <a href='#portfolio' className='button-container'>
                 <p>View my projects</p>
                 <img src="/images/icons/arrow.svg" alt="" />
-              </Link>
+              </a>
             </Col>
           </Row>
         </div>
 
         
       </Container>
-    </div>
+    </section>
   )
 }
 

@@ -1,7 +1,7 @@
 .footer-component {
 
-  background-color: rgba(0, 0, 0, 0.2);
-  padding-block: 4rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-block: 3rem;
   border-top: 1px solid var(--color-orange);
 
   .title {
@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     .link {
 

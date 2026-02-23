@@ -14,18 +14,23 @@ export const MyFooter = () => {
   return (
     <div className='footer-component'>
       <Container className='xxl'>
-        <Row className='pb-5'>
+        <Row className='pb-2'>
           <Col className='title'>
             <h3>Alvaro Valle</h3>
             <h5>Full Stack Developer, Data Scientist & Automatization Specialist </h5>
             <p>Valencia, Spain</p>
           </Col>
           <Col className='links'>
-            <Link className='link' to='/'>Home</Link>
+            {/* <Link className='link' to='/'>Home</Link>
             <Link className='link' to='/about'>About</Link>
             <Link className='link' to='/portfolio'>Portfolio</Link>
             <Link className='link' to='/hobbies'>Hobbies</Link>
-            <Link className='link' to='/contact'>Contact</Link>
+            <Link className='link' to='/contact'>Contact</Link> */}
+            <a href="#home" className='link'>Home</a>
+            <a href="#about" className='link'>About</a>
+            <a href="#portfolio" className='link'>Portfolio</a>
+            <a href="#hobbies" className='link'>Hobbies</a>
+            <a href="#contact" className='link'>Contact me</a>
           </Col>
           <Col className='contact'>
             <a target='_blank' href='https://www.linkedin.com/in/alvaro-valle-melgarejo/'>
@@ -51,7 +56,7 @@ export const MyFooter = () => {
             <p>© 2026 Álvaro. Todos los derechos reservados. Diseñado y desarrollado por Álvaro.</p>
           </Col>
           <Col className='policy'>
-            <Link className='priv-terms'>Privacy</Link>
+            <Link to='/privacy' className='priv-terms'>Privacy</Link>
             <p>•</p>
             <Link className='priv-terms'>Terms</Link>
           </Col>

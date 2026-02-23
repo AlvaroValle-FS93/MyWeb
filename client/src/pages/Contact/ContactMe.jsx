@@ -63,10 +63,19 @@ const ContactMe = () => {
 
 
   return (
-    <div className='contact-component'>
+    <section id='contact' className='contact-component'>
      
       <Container xxl>
-        <Row>
+        <Row className='title'>
+          <Col className='text-center'>
+            <div className='contact-title'>
+              <img src="/images/icons/contact.svg" alt="" />
+              <h2>Contact me</h2>
+            </div>
+            <p>Let´s contact</p>
+          </Col>
+        </Row>
+        <Row className='d-flex gap-3'>
           <Col>
             <div className='contact'>
               <h3>Get in touch and let’s create amazing projects together!</h3>
@@ -166,11 +175,12 @@ const ContactMe = () => {
                 Send
                 </button>
               </div>
+                <p className='text-center fst-italic'>* By submitting this form, you agree to the Privacy Policy.</p>
             </form>
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   )
 }
 

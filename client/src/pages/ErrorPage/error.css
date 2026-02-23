@@ -1,0 +1,20 @@
+.error-component {
+
+  h3 {
+
+
+  }
+
+  button {
+
+    background: var(--button-color);
+    width: 70px;
+    height: 70px;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
