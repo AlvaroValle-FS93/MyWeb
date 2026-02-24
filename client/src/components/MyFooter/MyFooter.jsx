@@ -29,7 +29,6 @@ export const MyFooter = () => {
             <a href="#home" className='link'>Home</a>
             <a href="#about" className='link'>About</a>
             <a href="#portfolio" className='link'>Portfolio</a>
-            <a href="#hobbies" className='link'>Hobbies</a>
             <a href="#contact" className='link'>Contact me</a>
           </Col>
           <Col className='contact'>

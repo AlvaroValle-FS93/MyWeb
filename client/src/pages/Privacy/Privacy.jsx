@@ -1,7 +1,10 @@
+import {Link} from 'react-router';
+
 
 function Privacy() {
   return (
     <div style={{ padding: "4rem 2rem", maxWidth: "800px", margin: "0 auto" }}>
+      <Link to='/'>Return to index</Link>
       <h1>Privacy Policy</h1>
 
       <p><strong>Last updated:</strong> February 2026</p>

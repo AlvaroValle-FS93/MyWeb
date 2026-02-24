@@ -1,0 +1,128 @@
+.navbar-component {
+
+  background-color: #021126;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInSlide 1s ease-out forwards;
+  animation-delay: 0.2s;
+
+  .container-navbar {
+
+    .title {
+
+      font-size: 2rem;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+
+      span {
+
+        background: var(--button-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .title:hover {
+
+      transform: scale(1.1);
+    }
+
+    .collapse-navbar {
+
+      justify-content: end;
+      gap: 3rem;
+
+      .links-navbar {
+
+        gap: 2rem;
+
+
+      }
+
+      .links-navbar > * {
+
+        color: var(--font-color-gray);
+        transition: transform 0.3s ease;
+
+        img {
+
+          width: 20px;
+        }
+      }
+
+      .links-navbar > *:hover {
+
+        color: var(--color-orange);
+        transform: scale(1.1);
+      }
+
+      .active {
+
+        color: var(--color-orange);
+        transform: scale(1.1);
+      }
+
+    }
+
+
+    .resume-toggle {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .curriculum {
+
+        display: flex;
+        gap: .5rem;
+        background: var(--button-color);
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+        transition: transform 0.3s ease;
+
+        img {
+  
+          width: 20px;
+        }
+
+        p {
+  
+          display: flex;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          color: var(--font-color-primary);
+        }
+      }
+
+      .curriculum:hover {
+
+        transform: scale(1.1);
+        background: -webkit-linear-gradient(180deg, #e4671a,#fea22d);
+      }
+
+      .dropdown-btn >* {
+
+        border: none;
+        color: var(--font-color-primary);
+        background: var(--button-color);
+      }
+    }
+  }
+}
+
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

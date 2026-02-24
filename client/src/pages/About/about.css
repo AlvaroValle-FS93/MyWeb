@@ -190,6 +190,10 @@
 
           .languages-list {
 
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
             h5 {
 
               margin: 0;

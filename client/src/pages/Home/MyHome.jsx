@@ -16,7 +16,14 @@ const MyHome = () => {
 
               <div className="name-job">
                 <h1>Hola! I'm <span>Álvaro</span>,</h1>
-                <h2>Full Stack Developer | Data Scientist | Automatization Specialist</h2>
+                <h2>
+                  <span className='rotulo'>
+                    <span>Full Stack Developer</span>
+                    <span>Data Scientist</span>
+                    <span>AI Integration</span>
+                    <span>Automatization Specialist</span>
+                  </span>
+                </h2>
               </div>
 
               <p>I build full-stack Applications and help businesses develop scalable solutions using technologies such as <span>Node.js</span>, <span>Express</span>, <span>Django</span>, <span>SQL</span>, <span>React</span>, and <span>Python</span>. I focus on writing clean, efficient code and creating reliable systems that solve real-world problems.</p>

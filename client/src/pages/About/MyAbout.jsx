@@ -19,7 +19,7 @@ const MyAbout = () => {
           <div className='header-about'>
             <div className='title-about'>
               <img src="/images/icons/about-icon.svg" alt="about icon" />
-              <h2>About Me</h2>
+              <h2 className='text-center'>About Me</h2>
             </div>
             <p>
               I turn ideas into digital products that boost productivity, enhance user experience, and drive smarter business decisions.
