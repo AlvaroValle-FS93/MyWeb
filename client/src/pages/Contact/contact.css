@@ -45,7 +45,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     padding: 2rem;
     border-radius: 2rem;
-    border: 1px solid var(--color-orange);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 
     h3 {
 
@@ -157,7 +157,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     padding: 2rem;
     border-radius: 2rem;
-    border: 1px solid var(--color-orange);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 
     .group-input {
 

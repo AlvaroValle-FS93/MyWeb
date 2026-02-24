@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const MyHome = () => {
   return (
     <section id='home' className='home-component'>
-      <Container xl>
+      <Container xxl>
         <Row className='info-home'>
           <Col xs={12} md={4} className='photo-container'>
               <img className='profile-photo' src="/images/photos/profile_photo.png" alt="Photo of me" />

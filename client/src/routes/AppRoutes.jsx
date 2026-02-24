@@ -13,19 +13,18 @@ export const AppRoutes = () => {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          {/* Esto lo dejo comentado en caso de que queramos hacer navegación en vez de scroll */}
-          <Route path='/' element={<WebLayout/>}>
-            {/* <Route path='/' element={<MyHome/>}/>
-            <Route path='/about' element={<MyAbout/>}/>
-            <Route path='/portfolio' element={<MyPortfolio/>}/>
-            <Route path='/hobbies' element={<MyHobbies/>}/>
-            <Route path='/contact' element={<ContactMe/>}/> */}
-          </Route>
-
-          <Route path='/privacy' element={<Privacy />}/>
-          <Route path='*' element={<ErrorPage />}/>
-        </Routes>
+          <Routes>
+            {/* Esto lo dejo comentado en caso de que queramos hacer navegación en vez de scroll */}
+            <Route path='/' element={<WebLayout/>}>
+              {/* <Route path='/' element={<MyHome/>}/>
+              <Route path='/about' element={<MyAbout/>}/>
+              <Route path='/portfolio' element={<MyPortfolio/>}/>
+              <Route path='/hobbies' element={<MyHobbies/>}/>
+              <Route path='/contact' element={<ContactMe/>}/> */}
+            </Route>
+            <Route path='/privacy' element={<Privacy />}/>
+            <Route path='*' element={<ErrorPage />}/>
+          </Routes>
       </BrowserRouter>
     </>
   )

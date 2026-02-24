@@ -36,6 +36,8 @@
       .links-navbar {
 
         gap: 2rem;
+        border-right: 1px solid var(--font-color-gray);
+        padding-right: 2rem;
 
 
       }
@@ -44,6 +46,7 @@
 
         color: var(--font-color-gray);
         transition: transform 0.3s ease;
+        text-align: center;
 
         img {
 
@@ -79,7 +82,7 @@
         display: flex;
         gap: .5rem;
         background: var(--button-color);
-        border-radius: 1rem;
+        border-radius: .5rem;
         padding: .5rem 1rem;
         transition: transform 0.3s ease;
 
@@ -98,17 +101,40 @@
         }
       }
 
+      
+      .dropdown-btn >* {
+        
+        border: none;
+        color: var(--font-color-primary);
+      }
+
+      .theme-button {
+
+        background-color: #353e51;
+        border-radius: .5rem;
+        padding: .5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+
+        img {
+
+          width: 30px;
+          
+        }
+
+      }
+
+      .theme-button:hover {
+
+        transform: scale(1.1);
+      }
+
+
       .curriculum:hover {
 
         transform: scale(1.1);
         background: -webkit-linear-gradient(180deg, #e4671a,#fea22d);
-      }
-
-      .dropdown-btn >* {
-
-        border: none;
-        color: var(--font-color-primary);
-        background: var(--button-color);
       }
     }
   }
@@ -125,4 +151,6 @@
     transform: translateY(0);
   }
 }
+
+
 

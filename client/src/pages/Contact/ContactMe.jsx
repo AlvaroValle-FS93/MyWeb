@@ -33,7 +33,7 @@ const ContactMe = () => {
       // Data validation in front
       contactSchema.parse(data);
 
-      const result = await axios.post('http://localhost:4000/api/users/contact', data);
+      const result = await axios.post('https://myweb-alvarovalle-backend-production.up.railway.app/api/users/contact', data);
       console.log(result);
       setData(initialValues);
       setMessageOk('Your data has been submitted successfully.');
@@ -53,6 +53,7 @@ const ContactMe = () => {
           if (error.response.data.errno === 1062){
             setFetchError('Email repetido');
           } else {
+            console.log(error)
             setFetchError('Uppsss error chungo')
           }
       }
