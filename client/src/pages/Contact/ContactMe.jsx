@@ -34,7 +34,7 @@ const ContactMe = () => {
       contactSchema.parse(data);
 
       /* http://localhost:4000 */
-      const result = await axios.post('https://myweb-alvarovalle-backend-production.up.railway.app/api/users/contact', data);
+      const result = await axios.post('https://myweb-backend-xwa7.onrender.com/api/users/contact', data);
       console.log(result);
       setData(initialValues);
       setMessageOk('Your data has been submitted successfully.');
