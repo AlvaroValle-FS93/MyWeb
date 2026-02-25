@@ -93,7 +93,7 @@ const ContactMe = () => {
                   <img src="/images/icons/email.svg" alt="email logo" />
                   <div className='details-text'>
                     <h5>Email</h5>
-                    <h6>alvaro.valle.melga@hotmail.com</h6>
+                    <p>alvaro.valle.melga@hotmail.com</p>
                   </div>
                 </div>
                 <div className='details'>

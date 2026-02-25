@@ -170,3 +170,21 @@
 
   color: var(--font-color-gray);
 }
+
+/* Etiqueta para nuevo poryecto */
+.new-project {
+
+  background-color: #122A2C;
+  color: #3DD778;
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+}
+
+/* Etiqueta para trabajo en progreso */
+.in-progress {
+
+  background-color: #4B4A50;
+  color: var(--color-orange);
+  padding: .25rem 1rem;
+  border-radius: 2rem;
+}

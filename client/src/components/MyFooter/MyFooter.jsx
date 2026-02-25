@@ -16,7 +16,7 @@ export const MyFooter = () => {
       <Container className='xxl'>
         <Row className='pb-2'>
           <Col className='title'>
-            <h3>Alvaro Valle</h3>
+            <h3>Álvaro Valle</h3>
             <h6>Full Stack Developer, Data Scientist & Automatization Specialist </h6>
             <p>Valencia, Spain</p>
           </Col>

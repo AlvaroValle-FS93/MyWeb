@@ -6,10 +6,10 @@
     
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 2rem;
-    padding: 3rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 
     .project {
@@ -23,7 +23,6 @@
       .bg-img {
 
         background-color: white;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('/images/projects/circular-score.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -34,13 +33,6 @@
         padding: 1rem;
         transition: background-size 1s ease, background-image 1s ease;
 
-        .tag {
-
-          background-color: #122A2C;
-          color: #3DD778;
-          border-radius: 2rem;
-          padding: .5rem 1rem;
-        }
       }
 
       .bg-img:hover {
@@ -89,13 +81,6 @@
           flex-wrap: wrap;
           margin-bottom: 1rem;
 
-          .technologies {
-
-            background-color: #4B4A50;
-            color: var(--color-orange);
-            padding: .25rem 1rem;
-            border-radius: 2rem;
-          }
         }
 
         .button-container {
