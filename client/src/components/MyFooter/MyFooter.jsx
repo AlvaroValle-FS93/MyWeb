@@ -52,7 +52,7 @@ export const MyFooter = () => {
         <hr />
         <Row>
           <Col className='copy-right'>
-            <p>© 2026 Álvaro. Todos los derechos reservados. Diseñado y desarrollado por Álvaro.</p>
+            <p className='p-gray'>© 2026 Álvaro. Todos los derechos reservados. Diseñado y desarrollado por Álvaro.</p>
           </Col>
           <Col className='policy'>
             <Link to='/privacy' className='priv-terms'>Privacy</Link>
@@ -60,7 +60,7 @@ export const MyFooter = () => {
             <Link className='priv-terms'>Terms</Link>
           </Col>
           <Col className='date'>
-            <p>{date}</p>
+            <p className='p-gray'>{date}</p>
           </Col>
         </Row>
       </Container>
