@@ -17,13 +17,13 @@ const MyAbout = () => {
       <Container xxl>
         <div className="about">
           <div className='header-about'>
-            <div className='title-about'>
+            <div className='title-section'>
               <img src="/images/icons/about-icon.svg" alt="about icon" />
               <h2 className='text-center'>About Me</h2>
             </div>
-            <p>
+            <h5 className='text-center'>
               I turn ideas into digital products that boost productivity, enhance user experience, and drive smarter business decisions.
-            </p>
+            </h5>
           </div>
 
           <Row className='about-info'>
@@ -35,10 +35,10 @@ const MyAbout = () => {
             </Col>
 
             <Col xs={12} md={12} lg={7} className='column-about-2'>
-              <p>💻 Full Stack developer crafting powerful web apps using <span>React</span>, <span>Node (Express)</span>, <span>SQL</span>, and <span>Django</span>.</p>
-              <p>📲 Creating seamless and high-performance <span>native mobile applications</span> for real-world users.</p>
-              <p>📊 Leveraging <span>Data Science</span> with <span>Python</span> to transform raw data into actionable insights.</p>
-              <p>🤖 <span>Automating</span> business processes and optimizing workflows for <span>SEO</span>, efficiency, and growth.</p>
+              <h6>Full Stack developer crafting powerful web apps using <span>React</span>, <span>Node (Express)</span>, <span>SQL</span>, and <span>Django</span>.</h6>
+              <h6>Creating seamless and high-performance <span>native mobile applications</span> for real-world users.</h6>
+              <h6>Leveraging <span>Data Science</span> with <span>Python</span> to transform raw data into actionable insights.</h6>
+              <h6><span>Automating</span> business processes and optimizing workflows for <span>SEO</span>, efficiency, and growth.</h6>
 
               <div className='location-div'>
                 <img src="/images/icons/world-icon.svg" alt="world icon" />
@@ -46,7 +46,7 @@ const MyAbout = () => {
               </div>
 
               <div className='stack'>
-                <h3>Tech Stack</h3>
+                <h4>Tech Stack</h4>
                 <div className='stack-list'>
                   <div onClick={() => changeStack(1)} className='stack-part'>
                     <img src="/images/icons/front.svg" alt="" />
@@ -74,7 +74,7 @@ const MyAbout = () => {
               <div className='languages'>
                 <img src="/images/icons/languages.svg" alt="" />
                 <div className='languages-list'>
-                  <h5>Languages</h5>
+                  <h4>Languages</h4>
                   <p>Spanish (native), french (native), english (professional proficiency), italian (professional proficiency)</p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const MyAbout = () => {
           </Row>
           <Row>
             <Col className='d-flex justify-content-center'>
-              <a href='#portfolio' className='button-container'>
+              <a href='#portfolio' className='my-primary-button'>
                 <p>View my projects</p>
                 <img src="/images/icons/arrow.svg" alt="" />
               </a>

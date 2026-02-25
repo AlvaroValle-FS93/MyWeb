@@ -17,7 +17,7 @@ export const MyFooter = () => {
         <Row className='pb-2'>
           <Col className='title'>
             <h3>Alvaro Valle</h3>
-            <h5>Full Stack Developer, Data Scientist & Automatization Specialist </h5>
+            <h6>Full Stack Developer, Data Scientist & Automatization Specialist </h6>
             <p>Valencia, Spain</p>
           </Col>
           <Col className='links'>
@@ -33,18 +33,18 @@ export const MyFooter = () => {
           </Col>
           <Col className='contact'>
             <a target='_blank' href='https://www.linkedin.com/in/alvaro-valle-melgarejo/'>
-              <div className='contact-icon'>
-                <img src="/images/icons/linkedin-footer.svg" alt="" />
+              <div className='my-icon-class'>
+                <img src="/images/icons/linkedin-footer.svg" alt="Linkedin icon" />
               </div>
             </a>
             <a target='_blank' href='https://github.com/AlvaroValle-FS93'>
-              <div className='contact-icon'>
-                <img src="/images/icons/github-footer.svg" alt="" />
+              <div className='my-icon-class'>
+                <img src="/images/icons/github-footer.svg" alt="Github icon" />
               </div>
             </a>
             <a target='_blank' href='mailto:alvaro.valle.melga@hotmail.com'>
-              <div className='contact-icon'>
-                <img src="/images/icons/email-footer.svg" alt="" />
+              <div className='my-icon-class'>
+                <img src="/images/icons/email-footer.svg" alt="Email icon" />
               </div>
             </a>
           </Col>

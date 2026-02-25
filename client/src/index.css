@@ -18,7 +18,7 @@
   --color-border: #0E9E92;
 }
 
-/* Body y fuente base */
+/* Estilos globales */
 body {
   padding-top: 60px;
   font-family: var(--font-family-primary);
@@ -28,3 +28,71 @@ body {
   line-height: 1.6;
   height: 100%;
 }
+
+h1 {
+
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  color: var(--font-color-primary);
+  font-weight: bold;
+
+  span {
+
+    background: var(--button-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+h2 {
+
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: var(--button-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* No olvidar h3 */
+
+h3 {
+
+  font-weight: bold;
+  background: var(--button-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.9rem;
+  /* Hay que arreglar esto para que la letra no estorbe */
+}
+
+
+
+h4 {
+
+  color: var(--font-color-primary);
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.3rem;
+  color: var(--font-color-gray);
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+p {
+
+  margin: 0;
+}
+
+

@@ -1,1 +1,172 @@
 
+/* Componentes creados */
+
+/* Título de cada sección */
+.title-section {
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  
+  img {
+  
+    width: 30px;
+  }
+}
+
+/* Estilos de botón primario */
+.my-primary-button {
+
+  display: flex;
+  gap: .5rem;
+  background: var(--button-color);
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  transition: transform 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color-primary);
+  text-decoration: none;
+  text-align: center;
+  border: none;
+
+  img {
+  
+    width: 20px;
+  }
+
+  p {
+  
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color-primary);
+  }
+
+  a {
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color-primary);
+    text-decoration: none;
+  }
+
+}
+
+.my-primary-button:hover {
+  transform: scale(1.1);
+  background: -webkit-linear-gradient(180deg, #e4671a,#fea22d);
+}
+
+/* iconos */
+
+.my-icon-class {
+  background: var(--button-color);
+  width: 50px;
+  height: 50px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+
+    width: 40px;
+  }
+}
+
+.my-icon-class:hover {
+
+  transform: scale(1.1);
+}
+
+/* Whatsapp icono */
+
+.whatsapp {
+
+  display: flex;
+  background-color: #2F4647;
+  border-radius: 1rem;
+  color: #86EFAC;
+  padding: .5rem 1rem;
+  transition: transform 0.3s ease;
+  gap: .5rem;
+
+  img {
+
+    width: 20px;
+  }
+
+  p {
+
+    margin:0;
+  }
+}
+
+.whatsapp:hover {
+
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Telegram icono */
+.telegram {
+
+  display: flex;
+  background-color: #192536;
+  border-radius: 1rem;
+  color: #2eabee;
+  padding: .5rem 1rem;
+  transition: transform 0.3s ease;
+  gap: .5rem;
+
+  p {
+
+    margin: 0;
+  }
+
+  img {
+
+    width: 20px;
+  }
+}
+
+.telegram:hover {
+
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Alerta de error icono */
+.alert-error {
+
+  background-color: #282230;
+  color: #EE6556;
+  border: 1px solid #472D38;
+  border-radius: .5rem;
+  padding: .1rem .5rem;
+  width: max-content;
+}
+
+/* Alerta de enviado */
+.alert-success {
+
+  background-color: #122A2C;
+  color: #3DD778;
+  border: 1px solid #144636;
+  border-radius: 1rem;
+  padding: .25rem 1rem;
+  width: max-content;
+}
+
+/* Estlo para la 'p' pero en gris */
+
+.p-gray {
+
+  color: var(--font-color-gray);
+}

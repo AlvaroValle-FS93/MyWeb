@@ -59,7 +59,7 @@ export const MyNavbar2 = () => {
               }
 
               <Nav.Link className='curriculum' href='/documents/cv.pdf' download>
-                <img src="/images/icons/download.svg" alt="" />
+                <img src="/images/icons/download.svg" alt="download icon" />
                 <p>My Resume</p>
               </Nav.Link>
             </Nav>

@@ -33,6 +33,7 @@ const ContactMe = () => {
       // Data validation in front
       contactSchema.parse(data);
 
+      /* http://localhost:4000 */
       const result = await axios.post('https://myweb-alvarovalle-backend-production.up.railway.app/api/users/contact', data);
       console.log(result);
       setData(initialValues);
@@ -69,37 +70,37 @@ const ContactMe = () => {
       <Container xxl>
         <Row className='title'>
           <Col className='text-center'>
-            <div className='contact-title'>
+            <div className='title-section'>
               <img src="/images/icons/contact.svg" alt="" />
               <h2>Contact me</h2>
             </div>
-            <p>Let´s contact</p>
+            <h5>Check out my contact options, and if you have any questions or would like to discuss a project, don’t hesitate to get in touch with me. I’ll be happy to talk with you.</h5>
           </Col>
         </Row>
         <Row className='d-flex gap-3'>
           <Col>
             <div className='contact'>
-              <h3>Get in touch and let’s create amazing projects together!</h3>
+              <h4>Get in touch and let’s create amazing projects together!</h4>
               <div className='contact-details'>
                 <div className='details'>
                   <img src="/images/icons/location.svg" alt="location logo" />
                   <div className='details-text'>
-                    <h4>Location</h4>
-                    <h5>Valencia, Spain</h5>
+                    <h5>Location</h5>
+                    <h6>Valencia, Spain</h6>
                   </div>
                 </div>
                 <div className='details'>
                   <img src="/images/icons/email.svg" alt="email logo" />
                   <div className='details-text'>
-                    <h4>Email</h4>
-                    <h5>alvaro.valle.melga@hotmail.com</h5>
+                    <h5>Email</h5>
+                    <h6>alvaro.valle.melga@hotmail.com</h6>
                   </div>
                 </div>
                 <div className='details'>
                   <img src="/images/icons/phone.svg" alt="email logo" />
                   <div className='details-text'>
-                    <h4>Phone</h4>
-                    <h5>+34 697 819 510</h5>
+                    <h5>Phone</h5>
+                    <h6>+34 697 819 510</h6>
                   </div>
                 </div>
               </div>
@@ -170,12 +171,12 @@ const ContactMe = () => {
                 {valErrors?.message && <p className='alert-error'>{valErrors.message} x</p>}
               </div>
                 {messageOk && <p className='alert-success'>{messageOk}</p>}
-              <div className='button-class'>
-                <button onClick={submit} type='button'>
-                  <img src="/images/icons/send.svg" alt="" />
-                Send
-                </button>
-              </div>
+                <div className="button-container">
+                  <button className='my-primary-button' onClick={submit} type='button'>
+                    <img src="/images/icons/send.svg" alt="" />
+                  Send
+                  </button>
+                </div>
                 <p className='text-center fst-italic'>* By submitting this form, you agree to the Privacy Policy.</p>
             </form>
           </Col>

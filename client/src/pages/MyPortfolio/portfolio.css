@@ -12,30 +12,6 @@
     gap: 3rem;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 
-    .portfolio-title {
-  
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-  
-      img {
-  
-        width: 30px;
-      }
-  
-      h2 {
-  
-        display: flex;
-        align-items: center;
-        margin: 0;
-        background: var(--button-color);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 3rem;
-        font-weight: bold;
-      }
-    }
-
     .project {
 
       /* background-color: #1e3144; */
@@ -99,9 +75,11 @@
           }
         }
 
-        p {
+        .description {
 
-          color: var(--font-color-gray);
+          p {
+            color: var(--font-color-gray)
+          }
         }
 
         .tags {
@@ -126,35 +104,6 @@
           gap: 1rem;
           flex-wrap: wrap;
           
-
-          a {
-
-            display: flex;
-            background: var(--button-color);
-            align-items: center;
-            margin: 0;
-            text-decoration: none;
-            border-radius: 1rem;
-            padding: .5rem 1rem;
-            transition: transform 0.3s ease;
-            gap: .5rem;
-
-            p {
-
-              margin: 0;
-              color: var(--font-color-primary);
-            }
-
-            img {
-
-              width: 20px;
-            }
-          }
-
-          a:hover {
-
-            transform: scale(1.1);
-          }
         }
       }
     }
