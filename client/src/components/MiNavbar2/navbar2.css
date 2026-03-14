@@ -35,10 +35,8 @@
 
       .links-navbar {
 
-        gap: 2rem;
         border-right: 1px solid var(--font-color-gray);
         padding-right: 2rem;
-
 
       }
 

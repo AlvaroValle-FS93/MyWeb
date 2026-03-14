@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import axios from 'axios';
 import {ZodError} from 'zod';
 import './contact.css';
-import contactSchema from '../../schemas/contactShema';
+import contactSchema from '../../schemas/contactSchema';
 
 const initialValues = {
   name: '',
@@ -16,9 +16,7 @@ const ContactMe = () => {
 
   const [data, setData] = useState(initialValues);
   const [valErrors, setValErrors] = useState();
-  console.log(valErrors);
   const [fetchError, setFetchError] = useState();
-  console.log(fetchError);
   const [messageOk, setMessageOk] = useState();
 
   const handleChange = (e) => {
@@ -34,29 +32,23 @@ const ContactMe = () => {
       contactSchema.parse(data);
 
       /* http://localhost:4000 */
-      const result = await axios.post('https://myweb-backend-xwa7.onrender.com/api/users/contact', data);
-      console.log(result);
+      await axios.post('https://myweb-backend-xwa7.onrender.com/api/users/contact', data);
       setData(initialValues);
-      setMessageOk('Your data has been submitted successfully.');
       setValErrors();
-      
+      setFetchError();
+      setMessageOk('Your data has been submitted successfully.');
+
     } catch (error) {
-      
+
       if (error instanceof ZodError) {
-        const fieldErrors = {}
-          error.issues.forEach((elem) => {
-            fieldErrors[elem.path[0]] = elem.message;
-          })
-          setValErrors(fieldErrors)
-      }
-      else {
-        setValErrors({})
-          if (error.response.data.errno === 1062){
-            setFetchError('Email repetido');
-          } else {
-            console.log(error)
-            setFetchError('Uppsss error chungo')
-          }
+        const fieldErrors = {};
+        error.issues.forEach((elem) => {
+          fieldErrors[elem.path[0]] = elem.message;
+        });
+        setValErrors(fieldErrors);
+      } else {
+        setValErrors({});
+        setFetchError('There was an error sending your message. Please try again.');
       }
     }
 
@@ -170,7 +162,8 @@ const ContactMe = () => {
                 ></textarea>
                 {valErrors?.message && <p className='alert-error'>{valErrors.message} x</p>}
               </div>
-                {messageOk && <p className='alert-success'>{messageOk}</p>}
+                {fetchError && <p className='alert-error'>{fetchError}</p>}
+              {messageOk && <p className='alert-success'>{messageOk}</p>}
                 <div className="button-container">
                   <button className='my-primary-button' onClick={submit} type='button'>
                     <img src="/images/icons/send.svg" alt="" />
